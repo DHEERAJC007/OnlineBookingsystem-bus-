@@ -1,0 +1,145 @@
+body{ 
+    background-image:url(im); 
+} 
+h1{
+background-color:rgb(255, 255, 0); 
+text-align:center; 
+font-family:'Times New Roman',Times, serif; 
+margin:20px;
+} 
+h2{
+background-color:yellow; 
+text-align: center; 
+max-height: 50px;;
+} 
+.navigation{
+background-color: red; 
+padding:14px; 
+height:50px; 
+text-align:center;
+line-height:40px;
+margin:20px;
+}
+ul {
+margin:0px;
+padding:0px;
+list-style:none;
+}
+ul li{
+float:left;
+width:80px;
+height:40px;
+opacity:0.8;
+}
+ul li a{
+color:white;
+display: block;
+}
+ul li a:hover{
+background-color:green;}
+.bg-img {
+/* The image used */
+background-image:url(airplane-wallpaper-2.jpg) ;
+margin:20px;
+/* Control the height of the image */
+min-height: 600px;
+/* Center and scale the image nicely*/
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+.pay{
+    background-image:url(payment.jpg);
+min-height: 500px;
+background-position: center;
+}
+.paym{
+position: absolute;
+right:0;
+margin:20px;
+max-width: 400px;
+padding:16px;
+background-color:white;
+}
+.submit-form{
+background-image:url(image1.jpg);
+min-height: 500px;
+background-position: center;
+}
+.form-submit{
+position: absolute;
+right:0;
+margin:20px;
+max-width: 400px;
+padding:16px;
+background-color:white;
+}
+.feedback{
+background-image:url(image.jpg);
+min-height: 500px;
+background-position: center;
+}
+.feed{
+position: absolute;
+right:0;
+margin:20px;
+max-width: 400px;
+padding:16px;
+background-color:white;}
+/* Add styles to the form container*/
+.container {
+position: absolute;
+right: 0;
+margin: 20px;
+max-width: 300px;
+padding: 16px;
+background-color: white;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] 
+{
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;border: none;
+background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+/* Set a style for the submit button*/
+.btn {
+background-color: aqua;
+color: black;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;opacity: 0.9;
+}
+.btn:hover {
+opacity: 1;
+}
+.loc{
+float:left;
+width:25%;
+display: block;
+min-height:200px;
+}
+#button{
+text-align:center;
+}
+#pictures{
+margin:20px;
+background-color:white;
+height:200px;
+}
+#offers{ 
+    margin:20px;
+} 
+.pic{ 
+    margin:20px } 
+    .pic1{ height:300px } 
+    .fly1{
+height:200px; width:300px;
+}

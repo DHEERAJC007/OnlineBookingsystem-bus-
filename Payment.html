@@ -1,0 +1,31 @@
+<html>
+    <head>
+<title>Flight reservation</title>
+<link rel="stylesheet" type="text/css" href="ud.css">
+<script src="flight.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+<h1 >Flight reservation</h1>
+<div class="navigation">
+<ul><li><a href="/regist">Home</a></li>
+<li><a href="/log">Login</a></li>
+<li><a href="/select">availability</a></li>
+<li><a href="/regist">offers</a></li>
+<li><a href="#">Payment</a></li>
+<li><a href="/feedback">feedback</a></li>
+</ul>
+</div>
+<div class="pay">
+<h2 id="payment">Payment section</h2>
+<form class="paym" action="payment" method="POST"><label for="acc_no"><b>Account_no</b></label>
+<input id="acc_no" placeholder="Account_no" type="text" name="acc_no" required>
+<label for="pin"><b>Pin</b></label>
+<input type="password" id="pin" placeholder="Pin" name="pin" required>
+<label for="ammount"><b>Amount</b></label>
+<input type="text" id="amt" placeholder="Amount" name="amount" required>
+<label for="coupon"><b>enter coupon number</b></label>
+<input type="text" id="coupon" placeholder="enter coupon number" name="coupon">
+<button type="submit" onclick="payment();"class= "btn">proceed to payment</button> </form>
+</div> </body> </html>

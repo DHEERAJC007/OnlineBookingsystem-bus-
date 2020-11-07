@@ -1,0 +1,45 @@
+<html>
+     <head> 
+         <title>Flight reservation</title> 
+         <link rel="stylesheet" type="text/css" href="ud.css"> 
+         <script src="flight.js">
+</script> 
+<script src="https://ajax.googleapis.com/ajax/li bs/angularjs/1.6.9/angular.min.js" >
+</script> 
+</head> 
+<body> 
+    <h1>Flight reservation</h1> 
+    <div class="bg-img"> 
+        <form action="/regis" class="container" method="POST" ngapp="myApp" ng-controller="validateCtrl" name="reg" novalidate>
+<h1>Sign in</h1>
+<label for="email">
+    <b>Email</b>
+</label>
+<input type="text" id="email" placeholder="Enter Email" name="email" ng-model="email" required>
+<span style="color:red" ng-show="reg.email.$dirty && reg.email.$invalid">
+<span ng-show="reg.email.$error.required">email is required.</span><br>
+<span ng-show="reg.email.$error.email">Invalid email address.</span></span>
+<label for="psw">
+    <b>Password</b>
+</label>
+<input type="password" id="psw" placeholder="Enter Password" name="pssw" ng-model="pssw" required>
+<span style="color:red" ng-show="reg.pssw.$dirty && reg.pssw.$invalid">
+<span ng-show= "req.pssw.$error.required">password is requied.</span>
+<span ng-show= "myForm.pssw.$error.pssw">Invalid password.</span>
+</span>
+<button type="submit" ng-disabled="reg.email.$dirty && reg.email.$invalid || reg.pssw.$dirty && reg.pssw.$invalid" class="btn">Sign in</button>
+<br>Are you a existing user?
+<a href="/log">click here</a>
+</li>
+</form>
+<script>
+var app = angular.module('myApp', []);
+app.controller(
+'validateCtrl', function($scope) {
+$scope.email ="bala@gmail.com";
+$scope.pssw ='asd1234';
+});
+</script>
+</div> 
+</body> 
+</html>

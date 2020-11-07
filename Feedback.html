@@ -1,0 +1,31 @@
+<html> 
+    <head> 
+        <title>Flight reservation</title> 
+        <link rel="stylesheet" type="text/css" href="ud.css"> <script src="flight.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/li bs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/li bs/angularjs/1.6.9/angular.min.js" ></script> 
+</head> 
+<body> 
+    <h1>Flight reservation</h1> 
+    <div class="navigation">
+        <ul>
+<li><a href="/regist">Home</a></li>
+<li><a href="/log">Login</a></li>
+<li><a href="/select">availability</a></li>
+<li><a href="/regist">offers</a></li>
+<li><a href="/pay">Payment</a></li>
+<li><a href="#">feedback</a></li>
+</ul>
+</div>
+<div class="feedback">
+<h2 id="feedback">Feedback:</h1>
+<form action="/feedback" class="feed" method="POST"><label for="name"><b>Name</b></label>
+<input id="f_name" placeholder="Name" type="text" size="50" name="f_name" required>
+<label for="email"><b>E-mail</b></label>
+<input id="f_email" placeholder="enter your mail" type="text" name="f_email" required>
+<label for="complain"><b>complain</b></label><br>
+<textarea id="f_complain" name="f_complain" rows="4" cols="50" placeholder=
+"please enter your complaints"></textarea><br><br><br>
+<button type="submit"class="btn">submit</button>
+</form></div>
+</body> </html>
